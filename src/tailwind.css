@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .menu-iteams {
+    @apply ml-7 mt-7 text-base font-bold text-white transition-colors hover:text-sideColor md:text-xl xl:mt-5;
+  }
+}
+@layer components {
+  .top-icon {
+    @apply mx-2 h-6;
+  }
+}
+@layer components {
+  .main-concact {
+    @apply my-2;
+  }
+}
+@layer components {
+  .main-contact-icons {
+    @apply px-2 text-xl text-seondColor transition-colors delay-75 group-hover:text-sideColor;
+  }
+}
+
+@layer components {
+  .main-btn {
+    @apply my-10 mx-2 border border-sideColor py-4 px-5 leading-10;
+  }
+}
