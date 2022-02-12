@@ -28,3 +28,23 @@
     @apply my-10 mx-2 border border-sideColor py-4 px-5 leading-10;
   }
 }
+@layer components {
+  .myskil {
+    @apply mx-5 mt-2 h-20 w-full rounded-md bg-slate-800;
+  }
+}
+@layer components {
+  .skillName {
+    @apply ml-6 pt-2;
+  }
+}
+@layer components {
+  .skillShow {
+    @apply ml-2 mt-2 inline-block h-3  rounded-2xl bg-seondColor;
+  }
+}
+@layer components {
+  .skillPersentent {
+    @apply mr-4 text-right;
+  }
+}
