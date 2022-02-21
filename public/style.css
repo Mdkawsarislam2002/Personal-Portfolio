@@ -660,6 +660,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: center;
 }
 
+.contact-text {
+  margin-left: 0.75rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -698,6 +705,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-6 {
   margin-bottom: 1.5rem;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
 }
 
 .mb-5 {
@@ -754,6 +765,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-4 {
   width: 1rem;
+}
+
+.w-7 {
+  width: 1.75rem;
 }
 
 .w-4\/6 {
@@ -905,6 +920,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-sideColor {
   --tw-text-opacity: 1;
   color: rgb(10 184 157 / var(--tw-text-opacity));
+}
+
+.outline {
+  outline-style: solid;
 }
 
 .grayscale {

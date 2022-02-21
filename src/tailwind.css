@@ -77,3 +77,8 @@
     @apply my-2 text-center;
   }
 }
+@layer components {
+  .contact-text {
+    @apply ml-3 text-lg font-semibold;
+  }
+}
