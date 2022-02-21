@@ -30,7 +30,7 @@
 }
 @layer components {
   .myskil {
-    @apply mx-5 mt-2 h-20 w-11/12 rounded-md bg-slate-800 duration-200 hover:scale-105 hover:bg-gray-700;
+    @apply mx-5 mt-6 h-20 w-11/12 rounded-md bg-slate-800 duration-200 hover:scale-105 hover:bg-gray-700 md:hover:scale-110;
   }
 }
 @layer components {
@@ -80,5 +80,52 @@
 @layer components {
   .contact-text {
     @apply ml-3 text-lg font-semibold;
+  }
+}
+/*  Pricing Table sections */
+@layer components {
+  .plan-name {
+    @apply text-center  text-2xl font-bold text-sideColor;
+  }
+}
+@layer components {
+  .Pricing-table {
+    @apply mx-5 h-[30rem]  rounded-md border border-zinc-700 bg-slate-800;
+  }
+}
+@layer components {
+  .table-prise {
+    @apply text-center text-xl;
+  }
+}
+@layer components {
+  .details {
+    @apply mx-2 text-center text-lg capitalize text-gray-300 md:mx-4;
+  }
+}
+@layer components {
+  .tik {
+    @apply ml-10 px-3 font-semibold text-sideColor;
+  }
+}
+
+@layer components {
+  .Pricing-gif {
+    @apply mx-auto;
+  }
+}
+@layer components {
+  .pricing-content {
+    @apply mx-1;
+  }
+}
+@layer components {
+  .hire-btn {
+    @apply mx-auto mt-7 grid place-items-center rounded-md border border-seondColor py-2 px-4;
+  }
+}
+@layer components {
+  .tik-items {
+    @apply mx-1;
   }
 }
