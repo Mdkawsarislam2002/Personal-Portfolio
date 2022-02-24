@@ -85,27 +85,27 @@
 /*  Pricing Table sections */
 @layer components {
   .plan-name {
-    @apply text-center  text-2xl font-bold text-sideColor;
+    @apply text-center  text-3xl font-bold text-sideColor;
   }
 }
 @layer components {
   .Pricing-table {
-    @apply mx-5 h-[30rem]  rounded-md border border-zinc-700 bg-slate-800;
+    @apply mx-5 h-[35rem]  rounded-md border border-zinc-700 bg-slate-800 md:mx-10 lg:mx-6;
   }
 }
 @layer components {
   .table-prise {
-    @apply text-center text-xl;
+    @apply my-2 text-center text-2xl text-sky-200;
   }
 }
 @layer components {
   .details {
-    @apply mx-2 text-center text-lg capitalize text-gray-300 md:mx-4;
+    @apply mx-2 text-center  text-xl capitalize text-gray-300 md:mx-4;
   }
 }
 @layer components {
   .tik {
-    @apply ml-10 px-3 font-semibold text-sideColor;
+    @apply my-2 ml-10 px-2 text-lg font-semibold text-sideColor;
   }
 }
 
@@ -121,7 +121,7 @@
 }
 @layer components {
   .hire-btn {
-    @apply mx-auto mt-7 grid place-items-center rounded-md border border-seondColor py-2 px-4;
+    @apply mx-auto mt-7 grid place-items-center rounded-md border border-seondColor py-2 px-4 text-xl uppercase transition-all hover:border hover:border-sideColor  hover:bg-seondColor  hover:text-gray-900;
   }
 }
 @layer components {
