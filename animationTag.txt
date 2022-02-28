@@ -1,0 +1,9 @@
+wow.js animations:
+ wow slideInRight" data-wow-offset="5"  data-wow-iteration="1
+
+animated.css class:
+animate__animated  animate__bounceInLeft
+
+combined :
+ class="animate__animated  animate__bounceInLeft scroll-mt-8  wow slideInRight" data-wow-offset="5"
+ data-wow-iteration="1"
