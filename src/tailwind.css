@@ -19,7 +19,7 @@
 }
 @layer components {
   .main-contact-icons {
-    @apply px-2 text-xl text-seondColor transition-colors delay-75 group-hover:text-sideColor;
+    @apply px-2 text-xl text-SecondColor transition-colors delay-75 hover:text-sideColor;
   }
 }
 
@@ -40,7 +40,7 @@
 }
 @layer components {
   .skillShow {
-    @apply ml-1 mt-2 inline-block h-3 rounded-2xl  bg-seondColor transition-all duration-500;
+    @apply ml-1 mt-2 inline-block h-3 rounded-2xl  bg-SecondColor transition-all duration-500;
   }
 }
 @layer components {
@@ -69,7 +69,7 @@
 }
 @layer components {
   .portfolio-live {
-    @apply my-2 rounded-3xl bg-sideColor py-2 px-3 font-bold uppercase leading-10 text-slate-300 transition-all duration-300  group-hover:bg-seondColor group-hover:text-white;
+    @apply my-2 rounded-3xl bg-sideColor py-2 px-3 font-bold uppercase leading-10 text-slate-300 transition-all duration-300  hover:bg-SecondColor hover:text-white;
   }
 }
 @layer components {
@@ -90,7 +90,7 @@
 }
 @layer components {
   .Pricing-table {
-    @apply mx-5 h-[35rem]  rounded-md border border-zinc-700 bg-slate-800 md:mx-10 lg:mx-6;
+    @apply mx-4 rounded-md border border-zinc-700 bg-slate-800 md:mx-10 lg:mx-6;
   }
 }
 @layer components {
@@ -100,7 +100,7 @@
 }
 @layer components {
   .details {
-    @apply mx-2 text-center  text-xl capitalize text-gray-300 md:mx-4;
+    @apply mx-2    text-center  text-lg capitalize text-gray-300;
   }
 }
 @layer components {
@@ -121,7 +121,7 @@
 }
 @layer components {
   .hire-btn {
-    @apply mx-auto mt-7 grid place-items-center rounded-md border border-seondColor py-2 px-4 text-xl uppercase transition-all hover:border hover:border-sideColor  hover:bg-seondColor  hover:text-gray-900;
+    @apply mx-auto mb-2  mt-7 flex justify-center rounded-md border border-SecondColor py-2 px-4 align-bottom text-xl uppercase transition-all  hover:border hover:border-sideColor  hover:bg-SecondColor  hover:text-gray-900;
   }
 }
 @layer components {
