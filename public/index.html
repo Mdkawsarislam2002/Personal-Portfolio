@@ -28,6 +28,33 @@
     />
   </head>
   <body class="bg-slate-900 text-white">
+    <div
+      id="loader"
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #003049;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <img
+        src="./assets/img/animated icon/pre-loader Img.svg"
+        alt="pre-loader"
+      />
+      <p style="font-weight: bolder; color: #00b4d8; font-size: 1.2rem">
+        Sorry To Keep You Wattling.
+      </p>
+      <p style="font-weight: bolder; color: #00b4d8; font-size: 1.4rem">
+        Please Wait For Sometime
+      </p>
+    </div>
     <nav>
       <div
         class="flex flex-col items-center justify-between border-b-2 border-sideColor pb-5 md:flex-row md:justify-between"
@@ -672,9 +699,9 @@
       </div>
     </footer>
     <!-- Custom JS file  -->
-    <script src="./assets/particles source/particles.js"></script>
-
+    <script src="./script.js"></script>
     <!--  3rd party libary file   -->
+    <script src="./assets/particles source/particles.js"></script>
     <script src="./assets/particles source/app.js"></script>
     <script src="assets/wow.js/wow.min.js"></script>
     <script>

@@ -1,4 +1,5 @@
-let preloaderDiv = document.querySelector(".preloader-div");
+let preLoader = document.querySelector("#loader");
+
 window.addEventListener("load", () => {
-  preloaderDiv.style.display = "none";
+  preLoader.style.display = "none";
 });
