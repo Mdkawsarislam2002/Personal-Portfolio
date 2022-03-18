@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
+! tailwindcss v3.0.19 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -527,7 +527,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-delay: 75ms;
 }
 
-.group:hover .main-contact-icons {
+.main-contact-icons:hover {
   --tw-text-opacity: 1;
   color: rgb(10 184 157 / var(--tw-text-opacity));
 }
@@ -655,7 +655,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 300ms;
 }
 
-.group:hover .portfolio-live {
+.portfolio-live:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(0 207 93 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
@@ -685,9 +685,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .Pricing-table {
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
-  min-height: 35rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   border-radius: 0.375rem;
   border-width: 1px;
   --tw-border-opacity: 1;
@@ -724,18 +723,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: 1.75rem;
   text-transform: capitalize;
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
-}
-
-@media (min-width: 768px) {
-  .details {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
 }
 
 .tik {
@@ -764,9 +756,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hire-btn {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0.5rem;
   margin-top: 1.75rem;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
   border-radius: 0.375rem;
   border-width: 1px;
   --tw-border-opacity: 1;
@@ -775,6 +768,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  vertical-align: bottom;
   font-size: 1.25rem;
   line-height: 1.75rem;
   text-transform: uppercase;
@@ -818,8 +812,27 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0.75rem;
 }
 
-.ml-8 {
-  margin-left: 2rem;
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.ml-16 {
+  margin-left: 4rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .mt-5 {
@@ -862,6 +875,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1rem;
 }
 
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.ml-14 {
+  margin-left: 3.5rem;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
 .block {
   display: block;
 }
@@ -888,6 +925,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-4 {
   height: 1rem;
+}
+
+.h-5\/6 {
+  height: 83.333333%;
+}
+
+.min-h-\[66\%\] {
+  min-height: 66%;
 }
 
 .w-full {
@@ -926,8 +971,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 8.333333%;
 }
 
+.w-9\/12 {
+  width: 75%;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
+}
+
 .basis-2\/4 {
   flex-basis: 50%;
+}
+
+.translate-y-20 {
+  --tw-translate-y: 5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .scroll-mt-8 {
@@ -936,6 +994,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -962,6 +1024,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 0.5rem;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .scroll-smooth {
   scroll-behavior: smooth;
 }
@@ -972,6 +1038,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .border-b-2 {
@@ -987,7 +1057,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(10 184 157 / var(--tw-border-opacity));
 }
 
-.border-seondColor {
+.border-SecondColor {
   --tw-border-opacity: 1;
   border-color: rgb(0 207 93 / var(--tw-border-opacity));
 }
@@ -1002,9 +1072,29 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(10 184 157 / var(--tw-bg-opacity));
 }
 
-.bg-seondColor {
+.bg-SecondColor {
   --tw-bg-opacity: 1;
   background-color: rgb(0 207 93 / var(--tw-bg-opacity));
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .pb-5 {
@@ -1057,6 +1147,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(10 184 157 / var(--tw-text-opacity));
 }
 
+.text-SecondColor {
+  --tw-text-opacity: 1;
+  color: rgb(0 207 93 / var(--tw-text-opacity));
+}
+
 .outline {
   outline-style: solid;
 }
@@ -1064,6 +1159,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .grayscale {
   --tw-grayscale: grayscale(100%);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.backdrop-opacity-10 {
+  --tw-backdrop-opacity: opacity(0.1);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .transition-all {
@@ -1100,6 +1201,36 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 /*  Pricing Table sections */
 
+.placeholder\:text-SecondColor::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(0 207 93 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-SecondColor:-ms-input-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(0 207 93 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-SecondColor::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(0 207 93 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-gray-400::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-gray-400:-ms-input-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-gray-400::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
 .hover\:scale-110:hover {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
@@ -1109,6 +1240,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:grayscale-0:hover {
   --tw-grayscale: grayscale(0);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.focus\:outline-2:focus {
+  outline-width: 2px;
+}
+
+.focus\:outline-sideColor:focus {
+  outline-color: rgb(10, 184, 157);
 }
 
 .group:hover .group-hover\:w-11\/12 {
@@ -1127,6 +1266,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:ml-14 {
     margin-left: 3.5rem;
+  }
+
+  .md\:w-3\/4 {
+    width: 75%;
   }
 
   .md\:grid-cols-2 {
@@ -1163,5 +1306,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
