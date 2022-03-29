@@ -28,6 +28,7 @@
     />
   </head>
   <body class="bg-slate-900 text-white">
+    <!-- pre loader -->
     <div
       id="loader"
       style="
@@ -55,9 +56,9 @@
         Please Wait For Sometime
       </p>
     </div>
-    <nav>
+    <nav class="sticky top-0 left-0 z-50 bg-[#0f172a]">
       <div
-        class="flex flex-col items-center justify-between border-b-2 border-sideColor pb-5 md:flex-row md:justify-between"
+        class="sticky top-0 left-0 z-50 flex items-center justify-between border-b-2 border-sideColor pb-3 md:flex-row md:justify-between"
       >
         <div class="logo">
           <a
@@ -66,17 +67,42 @@
             class="text-secondColor ml-14 mt-6 flex text-2xl font-bold"
           >
             <img
-              class="tsext-sideColor"
+              class="text-sideColor"
               src="./assets/img/media/logo-icons.svg"
               alt="logo"
-          /></a>
+            />
+          </a>
         </div>
         <div class="menu">
+          <!-- menu for mobile  -->
+          <div id="mobile-menu-btn" class="mr-5 mt-3 lg:hidden">
+            <div id="mobile-icon">
+              <lord-icon
+                src="https://cdn.lordicon.com/jtqpkhoh.json"
+                trigger="morph"
+                colors="primary:#0ab89d,secondary:#0f172a"
+                stroke="55"
+                style="width: 10rem; height: 4rem"
+              >
+              </lord-icon>
+            </div>
+          </div>
+          <div
+            id="mobile-content"
+            class="fixed top-0 left-[-60vw] z-10 block h-[100vh] w-[60vw] border border-sideColor bg-[#001d3d] transition-all duration-300 ease-in-out lg:hidden"
+          >
+            <ul class="mt-[10rem] grid justify-center">
+              <li class="mobile-iteams"><a href="#about">ABOUT</a></li>
+              <li class="mobile-iteams"><a href="#skill">SKILL</a></li>
+              <li class="mobile-iteams"><a href="#portfolio">PORTFOLIO</a></li>
+              <li class="mobile-iteams"><a href="#Pricing">HIRE ME </a></li>
+            </ul>
+          </div>
           <ul class="mr-4 flex items-center">
             <li class="menu-iteams"><a href="#about">ABOUT</a></li>
             <li class="menu-iteams"><a href="#skill">SKILL</a></li>
             <li class="menu-iteams"><a href="#portfolio">PORTFOLIO</a></li>
-            <li class="menu-iteams"><a href="#contact">CONTACT </a></li>
+            <li class="menu-iteams"><a href="#Pricing">HIRE ME </a></li>
           </ul>
         </div>
       </div>
@@ -170,10 +196,10 @@
     </main>
     <section>
       <div id="about" class="mt-5 flex scroll-mt-8 flex-col md:flex-row">
-        <div class="mx-auto basis-2/4 translate-y-20 md:order-last">
+        <div class="mx-auto basis-2/4 md:order-last">
           <img
             title="MD KAWSAR ISLAM YEASIN"
-            class="mx-auto min-h-[66%] w-4/6 rounded-xl grayscale transition-all duration-500 hover:scale-110 hover:grayscale-0"
+            class="mx-auto mb-10 min-h-[66%] w-4/6 rounded-xl grayscale transition-all duration-500 hover:scale-110 hover:grayscale-0"
             src="./assets/img/media/my-photo.JPG"
             alt="My Photo"
           />
@@ -632,7 +658,9 @@
       <div class="footer-area grid grid-cols-1 lg:grid-cols-2">
         <div class="footer-iteams form ml-10">
           <form class="footer-form" action="">
-            <p class="my-2 text-2xl font-bold">Sent Your Messege</p>
+            <p class="my-2 text-2xl font-bold text-sideColor">
+              Sent Your Messege
+            </p>
             <input
               class="text-SecondColor placeholder:text-gray-400 focus:outline-2 focus:outline-sideColor"
               type="text"
@@ -668,34 +696,38 @@
             </button>
           </form>
         </div>
-        <div>
+        <center>
           <div>
-            <p class="my-2 ml-5 text-2xl font-bold">Locations</p>
-            <!-- google map locations  -->
-            <iframe
-              class="ml-4 h-5/6 w-2/3 md:w-3/4"
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d116841.11019192151!2d90.38806668759982!3d23.77287442753151!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1647460672590!5m2!1sen!2sbd"
-              width="600"
-              height="450"
-              style="border: 1"
-              allowfullscreen=""
-              loading="lazy"
-            ></iframe>
-          </div>
-          <div class="main-concact mt-10">
-            <lord-icon
-              src="https://cdn.lordicon.com/fihkmkwt.json"
-              trigger="loop"
-              delay="400"
-              colors="outline:#121331,primary:#16c72e"
-              stroke="40"
-              style="width: 40px; height: 32px"
-            >
-            </lord-icon>
+            <div>
+              <p class="my-2 ml-5 mb-3 text-2xl font-bold text-sideColor">
+                Locations
+              </p>
+              <!-- google map locations  -->
+              <iframe
+                class="ml-4 h-5/6 w-2/3 md:w-3/4"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d116841.11019192151!2d90.38806668759982!3d23.77287442753151!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1647460672590!5m2!1sen!2sbd"
+                width="600"
+                height="450"
+                style="border: 1"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="main-concact mt-10">
+              <lord-icon
+                src="https://cdn.lordicon.com/fihkmkwt.json"
+                trigger="loop"
+                delay="400"
+                colors="outline:#121331,primary:#16c72e"
+                stroke="40"
+                style="width: 40px; height: 32px"
+              >
+              </lord-icon>
 
-            <span class="contact-text">Dhaka cantonment , Dhaka -1206</span>
+              <span class="contact-text">Dhaka cantonment , Dhaka -1206</span>
+            </div>
           </div>
-        </div>
+        </center>
       </div>
     </footer>
     <!-- Custom JS file  -->
