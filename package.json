@@ -4,16 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": " npx tailwindcss -i ./src/tailwind.css  -o ./public/style.css -w",
-    "build-p": "postcss ./src/tailwind.css  -o ./public/style.css -w"
+    "build": " npx tailwindcss -i ./src/tailwind.css  -o ./output/style.css -w",
+    "build-p": "postcss ./src/tailwind.css  -o ./output/style.css -w"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^10.4.2",
-    "cssnano": "^5.1.0",
+    "autoprefixer": "^10.4.4",
+    "cssnano": "^5.1.7",
+    "cssnano-preset-advanced": "^5.3.3",
     "postcss": "^8.4.7",
+    "postcss-cli": "^9.1.0",
     "prettier": "^2.5.1",
     "prettier-plugin-tailwind-css": "^1.5.0",
     "prettier-plugin-tailwindcss": "^0.1.5",

@@ -2,14 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=DM+Serif+Display:ital@1&family=Indie+Flower&family=Kurale&family=Lobster&family=Oswald:wght@500&family=Permanent+Marker&family=Satisfy&display=swap");
+
 @layer components {
   .menu-iteams {
-    @apply ml-7 mt-7 hidden text-base font-bold text-white transition-colors hover:text-sideColor md:text-xl lg:block xl:mt-5;
+    @apply ml-7 mt-7 hidden  font-merriweather text-base text-white transition-colors hover:text-sideColor md:text-xl lg:block xl:mt-5;
   }
 }
 @layer components {
   .mobile-iteams {
-    @apply ml-7 mt-7  text-base font-bold text-white transition-colors hover:text-sideColor md:text-xl lg:block xl:mt-5;
+    @apply ml-7 mt-7 font-merriweather  text-base font-bold text-white transition-colors hover:text-sideColor md:text-xl lg:block xl:mt-5;
   }
 }
 
@@ -41,7 +43,7 @@
 }
 @layer components {
   .skillName {
-    @apply ml-6 pt-2;
+    @apply ml-6 pt-2 font-merriweather;
   }
 }
 @layer components {

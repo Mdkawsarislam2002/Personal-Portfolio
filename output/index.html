@@ -20,14 +20,24 @@
     <link rel="stylesheet" href="./style.css" />
     <!-- Lord Icon CDN -->
     <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
-    <!-- animated.css link  -->
+    <!-- ============================= animated.css link ==============================  -->
     <link rel="stylesheet" href="css/animate.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+
+    <!-- ===========================   Google gon Font  Start================================ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=DM+Serif+Display:ital@1&family=Indie+Flower&family=Kurale&family=Lobster&family=Merriweather&family=Noto+Serif:ital@1&family=Oswald:wght@500&family=Permanent+Marker&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ===========================   Google gon Font  End================================ -->
   </head>
-  <body class="bg-slate-900 text-white">
+  <body class="bg-slate-900 font-noto text-white">
     <!-- pre loader -->
     <div
       id="loader"
@@ -39,7 +49,7 @@
         height: 100vh;
         background-color: #003049;
         z-index: 100;
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -98,8 +108,9 @@
               <li class="mobile-iteams"><a href="#Pricing">HIRE ME </a></li>
             </ul>
           </div>
+          <!--  menu to LG  Device  -->
           <ul class="mr-4 flex items-center">
-            <li class="menu-iteams"><a href="#about">ABOUT</a></li>
+            <li class="menu-iteams"><a href="#about">ABOUT </a></li>
             <li class="menu-iteams"><a href="#skill">SKILL</a></li>
             <li class="menu-iteams"><a href="#portfolio">PORTFOLIO</a></li>
             <li class="menu-iteams"><a href="#Pricing">HIRE ME </a></li>
@@ -107,7 +118,8 @@
         </div>
       </div>
     </nav>
-    <!---------------- main section ------------------------------>
+
+    <!-- ============================== main section ==================================== -->
 
     <main
       class="block h-screen w-full border-t border-SecondColor"
@@ -117,8 +129,10 @@
         class="animate__animated animate__fadeInBottomRight ml-10 flex flex-col items-center justify-center gap-4 md:ml-14 md:items-start lg:ml-20"
       >
         <div class="mt-5">
-          <p class="text-2xl font-bold text-sideColor">Hello, I'm</p>
-          <h1 class="mb-6 text-3xl font-extrabold md:text-5xl">
+          <p class="font-Lobster text-2xl font-bold text-sideColor">
+            Hello, I'm
+          </p>
+          <h1 class="mb-6 font-kurale text-3xl font-extrabold md:text-5xl">
             Md Kawsar Islam Yeasin
           </h1>
           <h2 class="text-xl">
@@ -126,11 +140,11 @@
               class="mx-2 inline-block h-4 w-4 rounded-full bg-sideColor"
             ></span>
 
-            Learner
+            <span class="font-noto">Learner</span>
             <span
               class="mx-2 inline-block h-4 w-4 rounded-full bg-SecondColor"
             ></span>
-            Web Developer
+            <span class="font-noto"> Web Developer</span>
           </h2>
         </div>
         <div class="main-contact">
@@ -225,7 +239,7 @@
             voluptates illo maiores quia architecto debitis ab tempora molestias
           </p>
           <a href="#Pricing" class="main-btn">Hire me </a>
-          <a href="#skill" class="main-btn"> My Resume </a>
+          <a href="#" id="ResumeBtn" class="main-btn"> My Resume </a>
         </div>
       </div>
     </section>
@@ -236,7 +250,9 @@
       data-wow-iteration="1"
     >
       <div>
-        <p class="my-5 text-center text-4xl font-bold text-sideColor">
+        <p
+          class="my-5 text-center font-Oswald text-4xl font-bold text-sideColor"
+        >
           MY SKILLS
         </p>
       </div>
@@ -284,9 +300,11 @@
       </div>
     </section>
     <section id="portfolio" class="mt-8 scroll-mt-8">
-      <div class="mb-20 mt-28 text-center text-4xl font-bold text-sideColor">
+      <p
+        class="mb-20 mt-28 text-center font-Oswald text-4xl font-bold text-sideColor"
+      >
         PORTFOLIO
-      </div>
+      </p>
       <div class="grid grid-cols-1 gap-2 md:grid-cols-2">
         <div class="portfolio-items group">
           <img
@@ -394,7 +412,9 @@
       data-wow-offset="5"
       data-wow-iteration="1"
     >
-      <h2 class="mb-20 mt-28 text-center text-4xl font-bold text-sideColor">
+      <h2
+        class="mb-20 mt-28 text-center font-Oswald text-4xl font-bold text-sideColor"
+      >
         Pricing Table
       </h2>
       <div class="mx-2 grid grid-cols-1 gap-4 md:mx-14 lg:grid-cols-3">
@@ -658,7 +678,7 @@
       <div class="footer-area grid grid-cols-1 lg:grid-cols-2">
         <div class="footer-iteams form ml-10">
           <form class="footer-form" action="">
-            <p class="my-2 text-2xl font-bold text-sideColor">
+            <p class="my-2 font-Oswald text-2xl font-bold text-sideColor">
               Sent Your Messege
             </p>
             <input
@@ -699,7 +719,9 @@
         <center>
           <div>
             <div>
-              <p class="my-2 ml-5 mb-3 text-2xl font-bold text-sideColor">
+              <p
+                class="my-2 ml-5 mb-3 font-Oswald text-2xl font-bold text-sideColor"
+              >
                 Locations
               </p>
               <!-- google map locations  -->
