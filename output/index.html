@@ -37,7 +37,7 @@
 
     <!-- ===========================   Google gon Font  End================================ -->
   </head>
-  <body class="bg-slate-900 font-noto text-white">
+  <body class="overflow-x-hidden bg-slate-900 font-noto text-white">
     <!-- pre loader -->
     <div
       id="loader"
@@ -126,7 +126,7 @@
       id="particles-js"
     >
       <div
-        class="animate__animated animate__fadeInBottomRight ml-10 flex flex-col items-center justify-center gap-4 md:ml-14 md:items-start lg:ml-20"
+        class="ml-10 flex flex-col items-center justify-center gap-4 md:ml-14 md:items-start lg:ml-20"
       >
         <div class="mt-5">
           <p class="font-Lobster text-2xl font-bold text-sideColor">
@@ -209,17 +209,17 @@
       </div>
     </main>
     <section>
-      <div id="about" class="mt-5 flex scroll-mt-8 flex-col md:flex-row">
+      <div id="about" class="mt-5 flex scroll-mt-20 flex-col md:flex-row">
         <div class="mx-auto basis-2/4 md:order-last">
           <img
             title="MD KAWSAR ISLAM YEASIN"
-            class="mx-auto mb-10 min-h-[66%] w-4/6 rounded-xl grayscale transition-all duration-500 hover:scale-110 hover:grayscale-0"
+            class="mx-auto mb-10 min-h-[66%] w-4/6 rounded-xl grayscale transition-all duration-500 hover:scale-110 hover:grayscale-0 md:translate-y-28"
             src="./assets/img/media/my-photo.JPG"
             alt="My Photo"
           />
         </div>
         <div class="mx-8 basis-2/4">
-          <h2 class="my-5 text-3xl text-sideColor">About Me</h2>
+          <h2 class="my-5 text-3xl text-sideColor">ABOUT ME</h2>
           <p class="mb-5 leading-7">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
             voluptates harum quae, error sequi natus aperiam quasi quaerat ab
@@ -245,13 +245,13 @@
     </section>
     <section
       id="skill"
-      class="animate__animated animate__bounceInRight wow slideInRight scroll-mt-8"
+      class="animate__animated animate__bounceInRight wow slideInRight scroll-mt-24"
       data-wow-offset="5"
       data-wow-iteration="1"
     >
       <div>
         <p
-          class="my-5 text-center font-Oswald text-4xl font-bold text-sideColor"
+          class="mb-20 mt-28 text-center font-Oswald text-4xl font-bold text-sideColor"
         >
           MY SKILLS
         </p>
@@ -274,24 +274,26 @@
         </div>
         <div class="myskil group">
           <h3 class="skillName">JavaScript</h3>
+          <p class="skillPersentent">70%</p>
+          <span class="skillShow w-3/5 group-hover:w-11/12"></span>
+        </div>
+        <div class="myskil group">
+          <h3 class="skillName">PostCSS</h3>
           <p class="skillPersentent">50%</p>
           <span class="skillShow w-2/4 group-hover:w-11/12"></span>
         </div>
         <div class="myskil group">
-          <h3 class="skillName">TypeScript</h3>
-          <p class="skillPersentent">N/A</p>
-          <span class="skillShow w-1/12 group-hover:w-11/12"></span>
+          <h3 class="skillName">SASS</h3>
+          <p class="skillPersentent">50%</p>
+          <span class="skillShow w-2/4 group-hover:w-11/12"></span>
         </div>
+
         <div class="myskil group">
           <h3 class="skillName">React.JS</h3>
           <p class="skillPersentent">N/A</p>
           <span class="skillShow w-1/12 group-hover:w-11/12"></span>
         </div>
-        <div class="myskil group">
-          <h3 class="skillName">SASS</h3>
-          <p class="skillPersentent">N/A</p>
-          <span class="skillShow w-1/12 group-hover:w-11/12"></span>
-        </div>
+
         <div class="myskil group">
           <h3 class="skillName">Bootstrap</h3>
           <p class="skillPersentent">N/A</p>
@@ -710,7 +712,7 @@
             <br />
             <button
               type="submit"
-              class="mb-4 mt-3 border border-SecondColor px-3 py-1"
+              class="mb-4 mt-3 border border-SecondColor px-3 py-1 hover:border hover:border-sideColor hover:bg-SecondColor hover:text-gray-900"
             >
               Submit
             </button>
